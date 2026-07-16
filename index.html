@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mi Suerte - Números Calientes para Loterías</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" type="text/javascript" charset="utf-8">
+        
+    </script>
+</head>
+<body>
+
+    <!-- Encabezado de la Web -->
+    <header>
+        <h1>🎰 Mi Suerte 🎰</h1>
+        <p>Tus números calientes y recomendaciones para ganar en las principales loterías</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Tarjeta Principal: Números Calientes del Día -->
+        <main class="card">
+            <h2>🔥 Números Calientes de Hoy 🔥</h2>
+            <div class="date-badge" id="current-date">Cargando fecha...</div>
+            
+            <div class="balls-container" id="hot-numbers">
+                <!-- Los bolos se generarán dinámicamente con JS -->
+                <div class="ball">--</div>
+                <div class="ball">--</div>
+                <div class="ball">--</div>
+                <div class="ball">--</div>
+            </div>
+
+            <p style="margin-bottom: 20px; color: #7f8c8d;">
+                Estos números son calculados diariamente basados en tendencias y estadísticas de sorteos recientes.
+            </p>
+            
+            <button class="btn" onclick="generatePersonalLuck()">🔮 Generar mi jugada personalizada</button>
+        </main>
+
+        <!-- Secciones de combinaciones recomendadas -->
+        <section class="suggestions-grid">
+            <div class="suggest-card">
+                <h3>💵 Pale Recomendado</h3>
+                <div class="numbers-row" id="pale-suggest">-- - --</div>
+            </div>
+            <div class="suggest-card">
+                <h3>💎 Tripleta Fuerte</h3>
+                <div class="numbers-row" id="tripleta-suggest">-- - -- - --</div>
+            </div>
+            <div class="suggest-card">
+                <h3>🎯 Súper Pale</h3>
+                <div class="numbers-row" id="super-pale-suggest">-- - --</div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Mi Suerte. Todos los derechos reservados.</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">
+            Juega con responsabilidad. Los números son sugerencias basadas en cálculos estadísticos y al azar y no garantizan premios. Solo para mayores de 18 años.
+        </p>
+    </footer>
+
+    
+</body>
+</html>
