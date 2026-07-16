@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Básico -->
-<meta name="description" content="Consulta los números calientes de hoy para las principales loterías. Genera tus jugadas de la suerte, palés, tripletas y súper palés al instante.">
-<meta name="keywords" content="numeros calientes, mi suerte, loteria, pale, tripleta, super pale, numeros de la suerte, ganar loteria">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Mi Suerte">
-
-<!-- Control de Navegador y Tema Móvil (combina con el rojo/naranja de la web) -->
-<meta name="theme-color" content="#ff4757">
-<meta name="apple-mobile-web-app-status-bar-style" content="#ff4757">
-
-<!-- Open Graph / Facebook / WhatsApp (Optimiza cómo se ve al compartir el enlace) -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="🎰 Mi Suerte - Números Calientes para Loterías">
-<meta property="og:description" content="¿Quieres ganar hoy? Descubre los números con mayor probabilidad y genera tu jugada personalizada al instante.">
-<meta property="og:url" content="https://loudevjs.github.io/Mi-Suerte-web/"> <!-- Reemplaza con tu URL real -->
-<meta property="og:image" content="https://loudevjs.github.io/Mi-Suerte-web/1784226240869.png"> <!-- Una imagen miniatura atractiva de 1200x630px -->
-<meta property="og:site_name" content="Mi Suerte">
-
-<!-- Twitter Cards (Para una visualización excelente en X/Twitter) -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="🎰 Mi Suerte - Números Calientes para Loterías">
-<meta name="twitter:description" content="Genera tus combinaciones fuertes (Palés, Tripletas) y consulta los números más calientes del día.">
-<meta name="twitter:image" content="https://loudevjs.github.io/Mi-Suerte-web/1784226240869.png">
+    <meta name="description" content="Consulta los números calientes de hoy para las principales loterías. Genera tus jugadas de la suerte, palés, tripletas y súper palés al instante.">
+    <meta name="keywords" content="numeros calientes, mi suerte, loteria, pale, tripleta, super pale, numeros de la suerte, ganar loteria">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Mi Suerte">
+    
+    <!-- Control de Navegador y Tema Móvil (combina con el rojo/naranja de la web) -->
+    <meta name="theme-color" content="#ff4757">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ff4757">
+    
+    <!-- Open Graph / Facebook / WhatsApp (Optimiza cómo se ve al compartir el enlace) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="🎰 Mi Suerte - Números Calientes para Loterías">
+    <meta property="og:description" content="¿Quieres ganar hoy? Descubre los números con mayor probabilidad y genera tu jugada personalizada al instante.">
+    <meta property="og:url" content="https://loudevjs.github.io/Mi-Suerte-web/"> <!-- Reemplaza con tu URL real -->
+    <meta property="og:image" content="https://loudevjs.github.io/Mi-Suerte-web/imgs/1784226240869.png"> <!-- Una imagen miniatura atractiva de 1200x630px -->
+    <meta property="og:site_name" content="Mi Suerte">
+    
+    <!-- Twitter Cards (Para una visualización excelente en X/Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🎰 Mi Suerte - Números Calientes para Loterías">
+    <meta name="twitter:description" content="Genera tus combinaciones fuertes (Palés, Tripletas) y consulta los números más calientes del día.">
+    <meta name="twitter:image" content="https://loudevjs.github.io/Mi-Suerte-web/imgs/1784226240869.png">
     
     
     <title>Mi Suerte - Números Calientes para Loterías</title>
-
+    
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Mi Suerte",
-  "url": "https://loudevjs.github.io/Mi-Suerte-web/",
-  "description": "Aplicación web gratuita para generar números calientes y jugadas fuertes para la lotería.",
-  "applicationCategory": "GameApplication",
-  "operatingSystem": "All",
-  "browserRequirements": "Requires HTML5 and JavaScript",
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "USD"
-  }
-}
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Mi Suerte",
+            "url": "https://loudevjs.github.io/Mi-Suerte-web/",
+            "description": "Aplicación web gratuita para generar números calientes y jugadas fuertes para la lotería.",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "All",
+            "browserRequirements": "Requires HTML5 and JavaScript",
+            "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD"
+            }
+        }
     </script>
-    s
     
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" type="text/javascript" charset="utf-8">
-        
+    
     </script>
 </head>
-<body>
 
+<body>
+    
     <!-- Encabezado de la Web -->
     <header>
         <h1>🎰 Mi Suerte 🎰</h1>
         <p>Tus números calientes y recomendaciones para ganar en las principales loterías</p>
     </header>
-
+    
     <div class="container">
         
         <!-- Tarjeta Principal: Números Calientes del Día -->
         <main class="card">
-            <h2>🔥 Números Calientes de Hoy 🔥</h2>
+            <h2>🔥 Números calientes de hoy 🔥</h2>
             <div class="date-badge" id="current-date">Cargando fecha...</div>
             
             <div class="balls-container" id="hot-numbers">
@@ -76,14 +77,14 @@
                 <div class="ball">--</div>
                 <div class="ball">--</div>
             </div>
-
+            
             <p style="margin-bottom: 20px; color: #7f8c8d;">
                 Estos números son calculados diariamente basados en tendencias y estadísticas de sorteos recientes.
             </p>
             
             <button class="btn" onclick="generatePersonalLuck()">🔮 Generar mi jugada personalizada</button>
         </main>
-
+        
         <!-- Secciones de combinaciones recomendadas -->
         <section class="suggestions-grid">
             <div class="suggest-card">
@@ -99,9 +100,9 @@
                 <div class="numbers-row" id="super-pale-suggest">-- - --</div>
             </div>
         </section>
-
-    </div>
-
+        
+    
+    
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2026 Mi Suerte. Todos los derechos reservados.</p>
@@ -109,7 +110,8 @@
             Juega con responsabilidad. Los números son sugerencias basadas en cálculos estadísticos y al azar y no garantizan premios. Solo para mayores de 18 años.
         </p>
     </footer>
-
+    
     
 </body>
+
 </html>
