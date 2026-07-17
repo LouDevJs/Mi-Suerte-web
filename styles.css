@@ -133,7 +133,7 @@ z /* Variables de diseño */
    padding: 30px;
    font-size: 1.1rem;
    font-weight: bold;
-   border-radius: 12wpx;
+   border-radius: 12px;
    cursor: pointer;
    transition: all 0.3s ease;
    box-shadow: 0 4px 10px rgba(255, 71, 87, 0.3);
